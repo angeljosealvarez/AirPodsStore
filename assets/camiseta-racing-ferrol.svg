@@ -1,0 +1,44 @@
+<svg width="600" height="750" viewBox="0 0 600 750" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Camiseta del Racing de Ferrol ilustrada</title>
+  <desc id="desc">Ilustración estilo vectorial de una camiseta verde con rayas blancas verticales y detalles en negro.</desc>
+  <defs>
+    <linearGradient id="bodyGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f8a46" />
+      <stop offset="100%" stop-color="#0c5c2c" />
+    </linearGradient>
+    <linearGradient id="collarGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b1f2f" />
+      <stop offset="100%" stop-color="#2e354d" />
+    </linearGradient>
+    <clipPath id="bodyClip">
+      <path d="M140 90 L200 20 Q300 -20 400 20 L460 90 L520 110 Q550 130 550 160 L520 640 Q515 670 480 690 L350 730 Q300 740 250 730 L120 690 Q85 670 80 640 L50 160 Q50 130 80 110 Z" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#bodyClip)">
+    <rect x="0" y="0" width="600" height="750" fill="url(#bodyGradient)" />
+    <g opacity="0.45">
+      <rect x="110" y="0" width="30" height="750" fill="#ffffff" />
+      <rect x="180" y="0" width="30" height="750" fill="#ffffff" />
+      <rect x="250" y="0" width="30" height="750" fill="#ffffff" />
+      <rect x="320" y="0" width="30" height="750" fill="#ffffff" />
+      <rect x="390" y="0" width="30" height="750" fill="#ffffff" />
+      <rect x="460" y="0" width="30" height="750" fill="#ffffff" />
+    </g>
+    <rect x="0" y="220" width="600" height="130" fill="#ffffff" opacity="0.92" />
+    <text x="300" y="300" text-anchor="middle" font-family="'SF Pro Display', 'Inter', sans-serif" font-weight="700" font-size="58" fill="#1a2a44">Estrella</text>
+    <text x="300" y="360" text-anchor="middle" font-family="'SF Pro Display', 'Inter', sans-serif" font-weight="700" font-size="58" fill="#1a2a44">Galicia</text>
+    <text x="300" y="410" text-anchor="middle" font-family="'SF Pro Display', 'Inter', sans-serif" font-weight="500" font-size="28" fill="#1a2a44">0,0º</text>
+    <text x="300" y="460" text-anchor="middle" font-family="'SF Pro Display', 'Inter', sans-serif" font-weight="500" font-size="28" fill="#1a2a44">Sin Alcohol</text>
+    <g opacity="0.18">
+      <text x="130" y="530" font-family="'Nothing You Could Do', 'Comic Neue', cursive" font-size="36" fill="#ffffff">Firma</text>
+      <text x="220" y="580" font-family="'Nothing You Could Do', 'Comic Neue', cursive" font-size="36" fill="#ffffff">Firma</text>
+      <text x="320" y="540" font-family="'Nothing You Could Do', 'Comic Neue', cursive" font-size="36" fill="#ffffff">Firma</text>
+      <text x="410" y="600" font-family="'Nothing You Could Do', 'Comic Neue', cursive" font-size="36" fill="#ffffff">Firma</text>
+      <text x="170" y="640" font-family="'Nothing You Could Do', 'Comic Neue', cursive" font-size="36" fill="#ffffff">Firma</text>
+    </g>
+  </g>
+  <path d="M140 90 L200 20 Q300 -20 400 20 L460 90 L520 110 Q550 130 550 160 L520 640 Q515 670 480 690 L350 730 Q300 740 250 730 L120 690 Q85 670 80 640 L50 160 Q50 130 80 110 Z" fill="none" stroke="#101820" stroke-width="16" />
+  <path d="M220 30 Q300 10 380 30" fill="none" stroke="url(#collarGradient)" stroke-width="36" stroke-linecap="round" />
+  <path d="M200 32 L140 110" stroke="#101820" stroke-width="20" stroke-linecap="round" />
+  <path d="M400 32 L460 110" stroke="#101820" stroke-width="20" stroke-linecap="round" />
+</svg>

@@ -3,51 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de AirPods</title>
+    <title>Rifa Camiseta Racing de Ferrol | Rumbo a Tokio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Tienda de AirPods</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#shop">Tienda</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="home">
-        <h2>Bienvenido a nuestra tienda</h2>
-        <p>Compra los mejores AirPods del mercado.</p>
-    </section>
-
-    <section id="shop">
-        <h2>Nuestros Productos</h2>
-        <div class="product">
-            <img src="https://link-a-imagen-del-producto" alt="AirPods">
-            <h3>AirPods Pro</h3>
-            <p>$199.99</p>
-            <!-- Botón de PayPal -->
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="ID_DEL_BOTON">
-                <input type="submit" value="Comprar con PayPal" class="paypal-btn">
-            </form>
+    <header class="nav-bar">
+        <div class="nav-wrapper">
+            <a href="#inicio" class="brand">Rumbo a Tokio</a>
+            <nav class="main-nav" aria-label="Principal">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#camiseta">La Camiseta</a></li>
+                    <li><a href="#comprar">Comprar</a></li>
+                    <li><a href="#historia">Mi Historia</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <a class="nav-cta" href="#comprar">Comprar boleto</a>
         </div>
-        <!-- Puedes agregar más productos de esta forma -->
-    </section>
+    </header>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Email: contacto@tiendadeairpods.com</p>
-    </section>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Rifa solidaria oficial</p>
+                <h1>Gana la camiseta firmada del <span>Racing de Ferrol</span> y ayúdame a llegar al mundial de breaking en Tokio.</h1>
+                <p class="hero-subtitle">Cada boleto cuesta <strong>10&nbsp;€</strong> y me acerca un paso más a representar a Galicia en el escenario internacional.</p>
+                <div class="hero-actions">
+                    <a class="primary-btn" href="#comprar">Comprar boletos</a>
+                    <a class="secondary-btn" href="#historia">Descubre mi viaje</a>
+                </div>
+                <div class="hero-meta" role="presentation">
+                    <div class="meta-card">
+                        <span class="meta-label">Meta de viaje</span>
+                        <span class="meta-value">2.400&nbsp;€</span>
+                    </div>
+                    <div class="meta-card">
+                        <span class="meta-label">Fecha del sorteo</span>
+                        <span class="meta-value">15 de septiembre</span>
+                    </div>
+                    <div class="meta-card">
+                        <span class="meta-label">Lugar</span>
+                        <span class="meta-value">Tokio, Japón</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-media" id="camiseta">
+                <div class="glass-card">
+                    <img src="assets/camiseta-racing-ferrol.svg" alt="Ilustración de la camiseta verde del Racing de Ferrol firmada por la plantilla" loading="lazy">
+                    <p>La camiseta está firmada por la plantilla y será entregada al ganador o ganadora del sorteo.</p>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2025 Tienda de AirPods</p>
+        <section class="features" aria-labelledby="caracteristicas-titulo">
+            <div class="section-header">
+                <p class="eyebrow">¿Por qué participar?</p>
+                <h2 id="caracteristicas-titulo">Un gesto solidario con espíritu Apple</h2>
+                <p class="section-subtitle">Diseñada con la elegancia de una Apple Store, esta campaña combina diseño premium con impacto real.</p>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="icon" aria-hidden="true">✨</div>
+                    <h3>Una joya coleccionable</h3>
+                    <p>Camiseta edición 2024/25 firmada por todo el equipo del Racing de Ferrol, lista para enmarcar.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="icon" aria-hidden="true">🏆</div>
+                    <h3>Apoya el breaking</h3>
+                    <p>Tu aportación financia el viaje, el alojamiento y la inscripción para representar a España en Tokio.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="icon" aria-hidden="true">🛡️</div>
+                    <h3>Sorteo transparente</h3>
+                    <p>Recibirás tu número por email y el ganador se anunciará en streaming y en redes sociales.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="comprar" class="purchase" aria-labelledby="compra-titulo">
+            <div class="purchase-content">
+                <div class="section-header">
+                    <p class="eyebrow">Cómo participar</p>
+                    <h2 id="compra-titulo">Elige tus boletos y asegúrate un lugar en el sorteo</h2>
+                    <p class="section-subtitle">Introduce tus datos, selecciona cuántos boletos quieres y recibirás un correo con la confirmación y tu número de participación.</p>
+                </div>
+                <form class="purchase-form" id="purchase-form" aria-describedby="purchase-help">
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" placeholder="María Pérez" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="maria@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tickets">Número de boletos</label>
+                        <div class="ticket-input">
+                            <button type="button" class="ticket-control" data-action="decrement" aria-label="Disminuir boletos">−</button>
+                            <input type="number" id="tickets" name="tickets" value="1" min="1" max="50" inputmode="numeric" aria-live="polite">
+                            <button type="button" class="ticket-control" data-action="increment" aria-label="Aumentar boletos">+</button>
+                        </div>
+                    </div>
+                    <p id="purchase-help" class="form-help">Cada boleto cuesta <strong>10&nbsp;€</strong>. Puedes pagar por Bizum, transferencia o PayPal tras enviar el formulario.</p>
+                    <div class="order-summary" aria-live="polite">
+                        <span>Total a aportar</span>
+                        <strong id="total">10&nbsp;€</strong>
+                    </div>
+                    <button type="submit" class="primary-btn full-width">Reservar boletos</button>
+                    <p class="form-note">Tras enviar tus datos te contactaré personalmente con las instrucciones de pago.</p>
+                </form>
+            </div>
+            <aside class="progress-card" aria-label="Progreso de la campaña">
+                <h3>Progreso hacia Tokio</h3>
+                <p>Gracias a tu ayuda ya hemos reunido:</p>
+                <div class="progress-bar" role="img" aria-label="65 por ciento de la meta alcanzada">
+                    <div class="progress" style="width: 65%"></div>
+                </div>
+                <div class="progress-meta">
+                    <span><strong>1.560&nbsp;€</strong> recaudados</span>
+                    <span>Meta: 2.400&nbsp;€</span>
+                </div>
+                <ul class="perks">
+                    <li>🎟️ Número único por cada boleto</li>
+                    <li>🎥 Sorteo en directo en Instagram</li>
+                    <li>📦 Envío nacional incluido</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section id="historia" class="story" aria-labelledby="historia-titulo">
+            <div class="story-text">
+                <p class="eyebrow">Mi camino</p>
+                <h2 id="historia-titulo">De Ferrol a Tokio, a ritmo de breaking</h2>
+                <p>Soy <strong>Alex "B-Boy Ferrolterra"</strong> y tras años de entrenamiento he clasificado para el campeonato internacional de breaking en Tokio. Mi sueño es representar a mi ciudad y mostrar el talento gallego en el escenario global.</p>
+                <p>El viaje incluye vuelos, alojamiento, visados, inscripción y equipación. Cada boleto que compras financia directamente estos gastos y me permite centrarme en entrenar para competir con los mejores.</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-date">Julio</span>
+                        <p>Clasificación en el torneo nacional de breaking celebrado en Madrid.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">Agosto</span>
+                        <p>Entrenamientos intensivos con mi crew y preparación física específica.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">Septiembre</span>
+                        <p>Sorteo de la camiseta en directo y viaje rumbo a Tokio para competir.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="story-media">
+                <div class="quote-card">
+                    <blockquote>
+                        “El breaking me enseñó que con pasión y disciplina podemos transformar cualquier sueño en una coreografía perfecta.”
+                    </blockquote>
+                    <cite>Alex · B-Boy Ferrolterra</cite>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq" aria-labelledby="faq-titulo">
+            <div class="section-header">
+                <p class="eyebrow">Preguntas frecuentes</p>
+                <h2 id="faq-titulo">Resolvemos tus dudas en segundos</h2>
+            </div>
+            <div class="faq-grid">
+                <details open>
+                    <summary>¿Cómo recibiré mis números del sorteo?</summary>
+                    <p>Tras enviar el formulario te escribiré por email con tus números asignados y los métodos de pago disponibles. Una vez confirmado el pago, tus boletos quedarán activos.</p>
+                </details>
+                <details>
+                    <summary>¿Qué métodos de pago aceptas?</summary>
+                    <p>Puedes pagar por Bizum, transferencia bancaria o PayPal. En el correo de confirmación encontrarás todos los datos necesarios.</p>
+                </details>
+                <details>
+                    <summary>¿Cuándo y dónde se anunciará al ganador?</summary>
+                    <p>El sorteo se realizará el <strong>15 de septiembre</strong> en un directo de Instagram. También publicaré el resultado en mis redes y por email.</p>
+                </details>
+                <details>
+                    <summary>¿Puedo comprar boletos desde fuera de España?</summary>
+                    <p>Sí, solo necesitamos coordinar el envío de la camiseta en caso de que resultes ganador o ganadora. Los gastos de envío nacional están incluidos.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contacto">
+        <div class="footer-content">
+            <div>
+                <h3>¿Quieres hablar directamente?</h3>
+                <p>Escríbeme a <a href="mailto:alexbreaking@gmail.com">alexbreaking@gmail.com</a> o envíame un DM a <a href="https://www.instagram.com" target="_blank" rel="noreferrer">@bboyferrolterra</a>.</p>
+            </div>
+            <div class="footer-cta">
+                <p class="eyebrow">Listo para apoyar</p>
+                <a class="primary-btn" href="#comprar">Participa en la rifa</a>
+            </div>
+        </div>
+        <p class="footer-note">© 2024 Rumbo a Tokio · Gracias por ser parte de este viaje</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
