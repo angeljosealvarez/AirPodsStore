@@ -3,51 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de AirPods</title>
+    <title>Rifa Camiseta Racing de Ferrol | Rumbo a Tokio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Tienda de AirPods</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#shop">Tienda</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="home">
-        <h2>Bienvenido a nuestra tienda</h2>
-        <p>Compra los mejores AirPods del mercado.</p>
-    </section>
-
-    <section id="shop">
-        <h2>Nuestros Productos</h2>
-        <div class="product">
-            <img src="https://link-a-imagen-del-producto" alt="AirPods">
-            <h3>AirPods Pro</h3>
-            <p>$199.99</p>
-            <!-- Botón de PayPal -->
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="ID_DEL_BOTON">
-                <input type="submit" value="Comprar con PayPal" class="paypal-btn">
-            </form>
+    <div class="ambient-grid" aria-hidden="true"></div>
+    <div class="ambient-orb orb-top" aria-hidden="true" data-parallax data-strength="22"></div>
+    <div class="ambient-orb orb-bottom" aria-hidden="true" data-parallax data-strength="-18"></div>
+    <header class="nav-bar">
+        <div class="nav-wrapper">
+            <a href="#inicio" class="brand">Rumbo a Tokio</a>
+            <nav class="main-nav" aria-label="Principal">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#camiseta">La Camiseta</a></li>
+                    <li><a href="#comprar">Comprar</a></li>
+                    <li><a href="#historia">Mi Historia</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <a class="nav-cta" href="#comprar">Comprar boleto</a>
         </div>
-        <!-- Puedes agregar más productos de esta forma -->
-    </section>
+    </header>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Email: contacto@tiendadeairpods.com</p>
-    </section>
+    <main>
+        <section id="inicio" class="hero" data-animate>
+            <div class="hero-spotlight" aria-hidden="true"></div>
+            <div class="hero-content">
+                <p class="eyebrow">Rifa oficial</p>
+                <h1>Te invito a llevarte la camiseta firmada del <span>Racing de Ferrol</span> para que pueda competir en Tokio.</h1>
+                <p class="hero-subtitle">Cada boleto cuesta <strong>3,50&nbsp;€</strong> y tu apoyo me acerca a representar a Galicia en el mundial de breaking.</p>
+                <div class="hero-badges" data-animate>
+                    <span class="badge">Breakdancer gallego</span>
+                    <span class="badge">Viaje rumbo a Tokio</span>
+                    <span class="badge">Sorteo 25 · 12 · 24</span>
+                </div>
+                <div class="hero-actions">
+                    <a class="primary-btn" href="#comprar">Elige tus boletos</a>
+                    <a class="secondary-btn" href="#historia">Conoce mi historia</a>
+                </div>
+                <div class="hero-meta" role="presentation">
+                    <div class="meta-card">
+                        <span class="meta-label">Meta de viaje</span>
+                        <span class="meta-value" data-counter data-format="currency" data-target="3500">3.500&nbsp;€</span>
+                    </div>
+                    <div class="meta-card">
+                        <span class="meta-label">Fecha del sorteo</span>
+                        <span class="meta-value">25 de diciembre</span>
+                    </div>
+                    <div class="meta-card">
+                        <span class="meta-label">Lugar</span>
+                        <span class="meta-value">Tokio, Japón</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-media" id="camiseta">
+                <div class="hero-glow" aria-hidden="true"></div>
+                <div class="glass-card" data-animate>
+                    <img src="assets/camiseta-racing-ferrol.svg" alt="Ilustración estilizada de la camiseta verde del Racing de Ferrol firmada" loading="lazy">
+                    <p>Esta joya firmada por toda la plantilla será tuya si tu número sale el 25 de diciembre.</p>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2025 Tienda de AirPods</p>
+        <section class="features" aria-labelledby="caracteristicas-titulo">
+            <div class="section-header" data-animate>
+                <p class="eyebrow">¿Por qué participar?</p>
+                <h2 id="caracteristicas-titulo">Una joya coleccionable · Apoya el breaking · Sorteo transparente</h2>
+                <p class="section-subtitle">He preparado esta experiencia con mimo para que sientas el valor del premio y la transparencia de la rifa.</p>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card" data-animate>
+                    <div class="icon" aria-hidden="true">✨</div>
+                    <h3>Una joya coleccionable</h3>
+                    <p>Camiseta edición 2024/25 firmada por todo el Racing de Ferrol, perfecta para conservar o presumir en tu colección.</p>
+                </article>
+                <article class="feature-card" data-animate>
+                    <div class="icon" aria-hidden="true">🏆</div>
+                    <h3>Apoya el breaking</h3>
+                    <p>Tu aportación financia mi viaje, el alojamiento y la inscripción para competir y llevar el breaking gallego a Tokio.</p>
+                </article>
+                <article class="feature-card" data-animate>
+                    <div class="icon" aria-hidden="true">🛡️</div>
+                    <h3>Sorteo transparente</h3>
+                    <p>Te asigno tu número en cuanto confirmo el Bizum y el sorteo lo haré en directo con toda la comunidad.</p>
+                </article>
+            </div>
+            <div class="feature-marquee" data-animate aria-hidden="true">
+                <div class="marquee-track">
+                    <span>Break mundial ·</span>
+                    <span>Bizum directo ·</span>
+                    <span>Sorteo 25 de diciembre ·</span>
+                    <span>Viaje a Tokio ·</span>
+                    <span>Camiseta firmada ·</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="comprar" class="purchase" aria-labelledby="compra-titulo">
+            <div class="purchase-content">
+                <div class="section-header" data-animate>
+                    <p class="eyebrow">Cómo participar</p>
+                    <h2 id="compra-titulo">Calcula tus boletos y hazme el Bizum</h2>
+                    <p class="section-subtitle">Elige cuántos boletos quieres, revisa el total y envíame el Bizum directo. Así de sencillo.</p>
+                </div>
+                <div class="ticket-panel" data-animate>
+                    <div class="form-group">
+                        <label for="tickets">Número de boletos</label>
+                        <div class="ticket-input">
+                            <button type="button" class="ticket-control" data-action="decrement" aria-label="Disminuir boletos">−</button>
+                            <input type="number" id="tickets" name="tickets" value="1" min="1" max="200" inputmode="numeric" aria-live="polite">
+                            <button type="button" class="ticket-control" data-action="increment" aria-label="Aumentar boletos">+</button>
+                        </div>
+                    </div>
+                    <p class="form-help">Cada boleto cuesta <strong>3,50&nbsp;€</strong>. Calcula tu aportación y acompáñame rumbo a Tokio.</p>
+                    <div class="order-summary" aria-live="polite">
+                        <span>Total estimado</span>
+                        <strong id="total">3,50&nbsp;€</strong>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Haz Bizum a David Amor Vizoso</h3>
+                        <p>Envíame el importe a mi número personal y recibirás tu número de rifa.</p>
+                        <a class="contact-link" href="tel:+34658207426">+34&nbsp;658&nbsp;20&nbsp;74&nbsp;26</a>
+                        <p class="contact-note">Si no puedes usar Bizum, escríbeme por <a href="https://wa.me/34658207426" target="_blank" rel="noreferrer">WhatsApp</a> y te indico cómo hacer la transferencia.</p>
+                    </div>
+                    <ul class="steps">
+                        <li><span class="step-number">1</span> Elige la cantidad de boletos que quieras.</li>
+                        <li><span class="step-number">2</span> Haz Bizum indicando tu nombre y la palabra “Rifa”.</li>
+                        <li><span class="step-number">3</span> Te confirmo por WhatsApp tu número y guardo tu participación.</li>
+                    </ul>
+                </div>
+            </div>
+            <aside class="progress-card" aria-label="Progreso de la campaña">
+                <h3>Progreso hacia Tokio</h3>
+                <p>Gracias a tu ayuda ya llevo reunidos:</p>
+                <div class="progress-bar" role="img" aria-label="21 por ciento de la meta alcanzada">
+                    <div class="progress" data-progress="21" style="width: 21%"></div>
+                </div>
+                <div class="progress-meta">
+                    <span><strong data-counter data-format="currency" data-target="750">750&nbsp;€</strong> recaudados</span>
+                    <span>Meta: <span data-counter data-format="currency" data-target="3500">3.500&nbsp;€</span></span>
+                </div>
+                <ul class="perks">
+                    <li>🎟️ Número único por cada boleto</li>
+                    <li>🎥 Sorteo en directo en Instagram</li>
+                    <li>📦 Envío nacional incluido</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section id="historia" class="story" aria-labelledby="historia-titulo">
+            <div class="story-text" data-animate>
+                <p class="eyebrow">Mi camino</p>
+                <h2 id="historia-titulo">Soy David Amor Vizoso, breaker ferrolano rumbo a Tokio</h2>
+                <p>Desde que descubrí el breaking, cada entrenamiento me acercó un poco más a este sueño: representar a Galicia en el mundial de Tokio. Cada boleto que compras es un gesto directo para que llegue al escenario con todo mi potencial.</p>
+                <p>Tu apoyo cubre vuelos, alojamiento, visados, inscripción y equipación. Así puedo concentrarme en entrenar y preparar una rutina a la altura del campeonato.</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-date">Octubre</span>
+                        <p>Clasificación para el mundial gracias a los resultados en las ligas nacionales.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">Noviembre</span>
+                        <p>Entrenamientos y exhibiciones para mantener la motivación y la forma.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-date">25 de diciembre</span>
+                        <p>Sorteo en directo de la camiseta y anuncio del ganador o ganadora.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="story-media" data-animate>
+                <div class="quote-card">
+                    <blockquote>
+                        “El breaking me enseñó que la constancia convierte un sueño lejano en un viaje real. Gracias por estar a mi lado en este camino.”
+                    </blockquote>
+                    <cite>David Amor Vizoso</cite>
+                </div>
+                <div class="story-highlight" aria-hidden="true">
+                    <span>Road to Tokyo</span>
+                    <span>Breakdance</span>
+                    <span>Pasión</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq" aria-labelledby="faq-titulo">
+            <div class="section-header" data-animate>
+                <p class="eyebrow">Preguntas frecuentes</p>
+                <h2 id="faq-titulo">Te resuelvo tus dudas al momento</h2>
+            </div>
+            <div class="faq-grid">
+                <details open data-animate>
+                    <summary>¿Cómo recibiré mis números del sorteo?</summary>
+                    <p>En cuanto reciba el Bizum te escribo por WhatsApp con tus números asignados y la confirmación de la participación.</p>
+                </details>
+                <details data-animate>
+                    <summary>¿Qué métodos de pago aceptas?</summary>
+                    <p>Prefiero Bizum al <a href="tel:+34658207426">+34&nbsp;658&nbsp;20&nbsp;74&nbsp;26</a>. Si no puedes usar Bizum, escríbeme y te paso los datos para transferencia.</p>
+                </details>
+                <details data-animate>
+                    <summary>¿Cuándo y dónde se anunciará al ganador?</summary>
+                    <p>El sorteo será el <strong>25 de diciembre</strong> en un directo de Instagram y compartiré el resultado por mis redes y WhatsApp.</p>
+                </details>
+                <details data-animate>
+                    <summary>¿Puedo comprar boletos desde fuera de España?</summary>
+                    <p>Sí, coordinamos el pago y el envío sin problema. Los gastos de envío nacional están incluidos y para otros destinos vemos la mejor opción.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contacto">
+        <div class="footer-content">
+            <div data-animate>
+                <h3>¿Quieres hablar directamente conmigo?</h3>
+                <p>Llama o haz Bizum a <a href="tel:+34658207426">+34&nbsp;658&nbsp;20&nbsp;74&nbsp;26</a> y te ayudo con lo que necesites.</p>
+                <p>También puedes escribirme por <a href="https://wa.me/34658207426" target="_blank" rel="noreferrer">WhatsApp</a> para coordinar cualquier detalle o gestionar una transferencia.</p>
+            </div>
+            <div class="footer-cta" data-animate>
+                <p class="eyebrow">Listo para apoyar</p>
+                <a class="primary-btn" href="#comprar">Participa en la rifa</a>
+            </div>
+        </div>
+        <p class="footer-note">© 2024 David Amor Vizoso · Gracias por llevarme a Tokio</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
