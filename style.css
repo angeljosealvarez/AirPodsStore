@@ -10,6 +10,7 @@
     --accent: #0c5c2c;
     --shadow-soft: 0 20px 60px rgba(15, 23, 42, 0.08);
     --max-width: 1200px;
+    --animation-duration: 0.9s;
 }
 
 * {
@@ -24,6 +25,39 @@ body {
     color: var(--text);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    animation: fadeIn var(--animation-duration) ease-out both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(32px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatSoft {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 a {
@@ -46,6 +80,18 @@ main {
     background: rgba(245, 245, 247, 0.85);
     backdrop-filter: blur(24px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    animation: fadeDown 0.8s ease-out both;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .nav-wrapper {
@@ -110,6 +156,7 @@ main {
     gap: 48px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
+    animation: fadeUp calc(var(--animation-duration) + 0.2s) ease-out both;
 }
 
 .eyebrow {
@@ -217,12 +264,22 @@ main {
     border: 1px solid rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(18px);
     text-align: center;
+    display: grid;
+    gap: 18px;
+    animation: fadeUp calc(var(--animation-duration) + 0.3s) ease-out both;
 }
 
-.glass-card img {
+.jersey-space {
+    width: 100%;
+    aspect-ratio: 3 / 4;
     border-radius: 22px;
-    box-shadow: 0 25px 60px rgba(12, 92, 44, 0.25);
-    margin-bottom: 16px;
+    background-color: rgba(12, 92, 44, 0.08);
+    background-image: url('assets/ferrol/ferrolcamiseta.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 25px 60px rgba(12, 92, 44, 0.12);
+    animation: floatSoft 6s ease-in-out infinite;
 }
 
 .glass-card p {
@@ -264,6 +321,7 @@ main {
     padding: 32px;
     box-shadow: var(--shadow-soft);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeUp calc(var(--animation-duration) + 0.25s) ease-out both;
 }
 
 .feature-card:hover {
@@ -292,6 +350,7 @@ main {
     grid-template-columns: minmax(0, 1.6fr) minmax(280px, 1fr);
     gap: 40px;
     align-items: start;
+    animation: fadeUp calc(var(--animation-duration) + 0.4s) ease-out both;
 }
 
 .purchase-content {
@@ -299,6 +358,7 @@ main {
     border-radius: 32px;
     padding: 48px;
     box-shadow: var(--shadow-soft);
+    animation: fadeUp calc(var(--animation-duration) + 0.45s) ease-out both;
 }
 
 .purchase-form {
@@ -395,6 +455,7 @@ input:focus {
     box-shadow: var(--shadow-soft);
     display: grid;
     gap: 18px;
+    animation: fadeUp calc(var(--animation-duration) + 0.5s) ease-out both;
 }
 
 .progress-card h3 {
@@ -412,6 +473,7 @@ input:focus {
     height: 100%;
     background: linear-gradient(90deg, #00c774, #2dd4bf);
     border-radius: 999px;
+    transition: width 0.8s ease, filter 0.8s ease;
 }
 
 .progress-meta {
@@ -454,6 +516,7 @@ input:focus {
     border-radius: 20px;
     padding: 18px 24px;
     box-shadow: var(--shadow-soft);
+    animation: fadeUp calc(var(--animation-duration) + 0.35s) ease-out both;
 }
 
 .timeline-date {
@@ -468,6 +531,7 @@ input:focus {
     border-radius: 28px;
     padding: 36px;
     box-shadow: var(--shadow-soft);
+    animation: fadeUp calc(var(--animation-duration) + 0.5s) ease-out both;
 }
 
 .quote-card blockquote {
@@ -498,6 +562,7 @@ details {
     border-radius: 20px;
     padding: 24px 28px;
     box-shadow: var(--shadow-soft);
+    animation: fadeUp calc(var(--animation-duration) + 0.55s) ease-out both;
 }
 
 details[open] {
@@ -523,6 +588,7 @@ details p {
     background: #000;
     color: #f5f5f7;
     padding: 56px 24px 40px;
+    animation: fadeUp calc(var(--animation-duration) + 0.6s) ease-out both;
 }
 
 .footer-content {

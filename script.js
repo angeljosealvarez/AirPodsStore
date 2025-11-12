@@ -3,7 +3,7 @@ const totalOutput = document.querySelector('#total');
 const form = document.querySelector('#purchase-form');
 const ticketControls = document.querySelectorAll('.ticket-control');
 
-const TICKET_PRICE = 10;
+const TICKET_PRICE = 3;
 
 function formatCurrency(value) {
     return new Intl.NumberFormat('es-ES', {
